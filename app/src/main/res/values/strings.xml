@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">EscrimaEurope Inventory</string>
+
+    <string name="empty_text_view">You currently have no shop inventory. Click button to add new products</string>
+
+    <string name="select_image_text">Select Image of product</string>
+
+    <string name="product_type">Product Type</string>
+    <string name="product_type_hint">Stick, Sword, Knife, Bag or Protective Gear</string>
+
+    <string name="product_make"> Product Make</string>
+    <string name="product_make_hint">Wood Type, Aluminium, Bag Size, Gear Type</string>
+
+    <string name="product_name"> Product Name</string>
+    <string name="product_name_hint">Unique Name or Description</string>
+
+
+    <string name="price">Price </string>
+    <string name="placeholder_price">10€</string>
+    <string name="price_per_piece">Price per piece</string>
+
+    <string name="total_sales">Total Sales</string>
+
+    <string name="supplier_name">Supplier</string>
+    <string name="supplier_email">Supplier Email</string>
+    <string name="supplier_contact_number">Supplier Contact Number</string>
+
+    <string name="quantity">Quantity</string>
+    <string name="placeholder_quantity">10</string>
+
+    <string name="action_save">Save item</string>
+    <string name="menu_order_item">Order more</string>
+    <string name="menu_delete_item">Delete item</string>
+    <string name="menu_delete_all_data">Delete all data</string>
+
+    <string name="add_new_product">Add New Item</string>
+    <string name="edit_item">Edit Item</string>
+
+    <string name="add_dummy_data">Insert Dummy Data</string>
+
+    <string name="no_stock">You have no stock in the inventory</string>
+
+    <string name="unsaved_changes">There are unsaved changes in the product information. Do you want to continue?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+
+    <string name="phone">Phone</string>
+    <string name="email">E-mail</string>
+    <string name="order_message">You may place your order by phone or email</string>
+
+    <string name="delete_message">Are you sure you want to delete?</string>
+    <string name="delete">Accept</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Toast message in editor when current item was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="update_successful">Item updated</string>
+
+    <!-- Toast message in editor when current item has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="update_failed">Error with updating item</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current item [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this item?</string>
+
+    <!-- Toast message in editor when new item has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="insert_successful">Item saved</string>
+
+    <!-- Toast message in editor when current item has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="insert_failed">Error with updating item</string>
+
+    <string name="failed_save">Failed to save changes</string>
+
+    <string name="added_correctly">Product added correctly</string>
+
+    <string name="modified_correctly">Product modified correctly</string>
+
+    <string name="action_modify"> Edit Item</string>
+
+    <string name="type_require">Product type required</string>
+    <string name="make_require">Product make required</string>
+    <string name="name_require">Product name required</string>
+    <string name="quantity_require">Quantity required </string>
+    <string name="price_require">Product price required</string>
+    <string name="supplier_name_require">Supplier name required</string>
+    <string name="supplier_email_require">Supplier email required</string>
+    <string name="supplier_phone_require">Supplier contact number required</string>
+    <string name="image_required">image required</string>
+</resources>

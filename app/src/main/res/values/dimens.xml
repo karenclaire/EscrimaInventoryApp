@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name ="margin_left_right">16dp</dimen>
+    <dimen name="minimum_height_of_image">80dp</dimen>
+    <dimen name ="divider_height">2dp</dimen>
+    <dimen name ="margin_top_edit_text">6dp</dimen>
+    <dimen name="hint_font_size">12sp</dimen>
+    <dimen name="view_margin">8dp</dimen>
+</resources>

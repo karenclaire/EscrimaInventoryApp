@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll_view"
+    tools:context=".DetailsActivity">
+
+    <RelativeLayout style="@style/Default">
+
+        <Button
+            android:id="@+id/select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:textColor="#2980B9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:text="@string/select_image_text"/>
+
+        <ImageView
+            android:id="@+id/default_image"
+            android:layout_width="wrap_content"
+            android:minHeight="@dimen/minimum_height_of_image"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_below="@id/select_image"
+            android:src="@drawable/sparring2"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="#2980B9"
+            android:layout_below="@id/default_image"/>
+
+
+        <TextView
+            android:id="@+id/product_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_right"
+            android:textColor="#2980B9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:text="@string/product_type"
+            android:layout_below="@id/divider"/>
+
+        <EditText
+            android:id="@+id/product_type_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/product_type"
+            android:layout_toEndOf="@id/product_type"
+            android:layout_below="@id/divider"
+            android:textColor="#2980B9"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:textSize="@dimen/hint_font_size"
+            android:fontFamily="gothic-century-light"
+            android:inputType="textPersonName"
+            android:hint="@string/product_type_hint"/>
+
+        <TextView
+            android:id="@+id/product_make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_right"
+            android:textColor="#2980B9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:text="@string/product_make"
+            android:layout_below="@id/product_type" />
+
+        <EditText
+            android:id="@+id/product_make_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/product_make"
+            android:layout_toEndOf="@id/product_make"
+            android:layout_below="@id/product_type_hint"
+            android:textColor="#2980B9"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:textSize="@dimen/hint_font_size"
+            android:fontFamily="gothic-century-light"
+            android:inputType="textPersonName"
+            android:hint="@string/product_make_hint" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_right"
+            android:textColor="#2980B9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:text="@string/product_name"
+            android:layout_below="@id/product_make" />
+
+        <EditText
+            android:id="@+id/product_name_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/product_name"
+            android:layout_toEndOf="@id/product_name"
+            android:layout_below="@id/product_make_hint"
+            android:textColor="#2980B9"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:textSize="@dimen/hint_font_size"
+            android:fontFamily="gothic-century-light"
+            android:inputType="textPersonName"
+            android:hint="@string/product_name_hint" />
+
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_right"
+            android:gravity="center_vertical"
+            android:textColor="#2980B9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:text="@string/quantity"
+            android:layout_below="@id/product_name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/product_name_hint"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:gravity="right"
+            android:weightSum="8">
+
+            <ImageButton
+                android:id="@+id/decrease_quantity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/minus" />
+
+            <EditText
+                android:id="@+id/quantity_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <ImageButton
+                android:id="@+id/increase_quantity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/plus" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_right"
+            android:textColor="#2980B9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:text="@string/price"
+            android:layout_below="@id/quantity" />
+
+        <EditText
+            android:id="@+id/price_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/price"
+            android:layout_toEndOf="@id/price"
+            android:layout_below="@id/quantity"
+            android:textColor="#2980B9"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/supplier_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_right"
+            android:textColor="#2980B9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:text="@string/supplier_name"
+            android:layout_below="@id/price" />
+
+        <EditText
+            android:id="@+id/supplier_name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/supplier_name"
+            android:layout_toEndOf="@id/supplier_name"
+            android:layout_below="@id/price_field"
+            android:textColor="#2980B9"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/supplier_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_right"
+            android:textColor="#2980B9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:text="@string/supplier_email"
+            android:layout_below="@id/supplier_name" />
+
+        <EditText
+            android:id="@+id/supplier_email_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/supplier_email"
+            android:layout_toEndOf="@id/supplier_email"
+            android:layout_below="@id/supplier_name_field"
+            android:textColor="#2980B9"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/supplier_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_right"
+            android:textColor="#2980B9"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:text="@string/supplier_contact_number"
+            android:layout_below="@id/supplier_email" />
+
+        <EditText
+            android:id="@+id/supplier_contact_number_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/supplier_contact_number"
+            android:layout_toEndOf="@id/supplier_contact_number"
+            android:layout_below="@id/supplier_email_field"
+            android:textColor="#2980B9"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:fontFamily="gothic-century-light"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+    <!-- icon care of
+    "https://icons8.com/icon/38113/Plus-2-Math-Filled">Plus 2 math filled icon credits</a> -->

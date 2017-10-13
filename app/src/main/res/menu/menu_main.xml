@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/add_dummy_data"
+        android:title="@string/add_dummy_data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_delete_all_data"
+        android:title="@string/menu_delete_all_data"
+        app:showAsAction="never" />
+
+
+
+
+</menu>
+
+<!-- delete icon care of <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->

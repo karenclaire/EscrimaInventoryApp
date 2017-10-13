@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/default_image"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:layout_gravity="start"
+        android:layout_margin="@dimen/view_margin"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="160dp"
+        android:background="#2980B9" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:fontFamily="gothic-century-light"
+            android:paddingTop="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#2980B9"
+            android:textStyle="bold"
+            tools:text="@string/product_name" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/product_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:fontFamily="gothic-century-light"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#C6C9CA"
+            tools:text="10" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@id/product_name"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:layout_toLeftOf="@id/quantity" />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@id/view1"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:background="#C6C9CA" />
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:fontFamily="gothic-century-light"
+            android:paddingTop="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#2980B9"
+            android:textStyle="bold|italic"
+            tools:text="10€" />
+
+        <TextView
+            android:id="@+id/total_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:fontFamily="gothic-century-light"
+            android:paddingTop="@dimen/margin_left_right"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#2980B9"
+            android:textStyle="bold|italic"
+            tools:text="100€" />
+
+        <ImageButton
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:onClick="buy"
+            android:src="@drawable/buy" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
